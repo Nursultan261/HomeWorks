@@ -41,26 +41,10 @@ const ep = () => {
 }
 
 
-passwordInput.addEventListener('blur', () => {
-  if (!passwordRegex.test(passwordInput.value)) {
-    passwordInput.setCustomValidity('');
-  } else {
-    passwordInput.setCustomValidity('');
-  }
-});
-
-confirmPasswordInput.addEventListener('blur', () => {
-  if (passwordInput.value !== confirmPasswordInput.value) {
-    confirmPasswordInput.setCustomValidity('');
-  } else {
-    confirmPasswordInput.setCustomValidity('');
-  }
-});
-
 function moveBlock() {
     const block = document.getElementById('moving-block');
     const currentPosition = parseInt(block.style.left || 0);
-    const newPosition = currentPosition + 10;
+    const newPosition = currentPosition + 1;
     block.style.left = newPosition + 'px';
     if (newPosition < document.documentElement.clientWidth - 50) {
       requestAnimationFrame(moveBlock);
