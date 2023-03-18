@@ -1,31 +1,21 @@
 //1
-const circle = document.getElementById("circle");
-const square = document.getElementById("идщсл");
-
-let x = 0;
-let y = 0;
-let directionX = 1;
-let directionY = 1;
-
-function moveCircle() {
-  x += 5 * directionX;
-  y += 5 * directionY;
-
-  if (x > 450 || x < 0) {
-    directionX *= -1;
+function animation() {
+  var $ = {
+      radius  :     250,
+      speed   :     20
   }
-
-  if (y > 450 || y < 0) {
-    directionY *= -1;
-  }
-
-  circle.style.left = x + "px";
-  circle.style.top = y + "px";
-setTimeout(moveCircle, 50)
+  var krug = document.querySelector('.circle');
+  var f = 0;
+  var s = 2 * Math.PI / 180;
+  setInterval(function() {
+      f += s;
+      krug.style.left =  235 + $.radius * Math.sin(f)  + 'px';
+      krug.style.top =   235 + $.radius * Math.cos(f) + 'px';
+  }, $.speed)
+  setTimeout(function (){
+      clearInterval(interval);
+  },5000)
 }
-
-setTimeout(moveCircle, 50)
-
 //2
 const timer = document.getElementById("timer");
 const countdown = document.getElementById("countdown");
