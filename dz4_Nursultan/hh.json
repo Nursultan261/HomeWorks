@@ -1,0 +1,116 @@
+[
+    {
+      "img": "https://memepedia.ru/wp-content/uploads/2023/03/podkraduli-mem.jpg",
+      "title": "1",
+      "description": "товар очень хороший",
+      "price": 10
+    },
+    {
+      "img": "https://memepedia.ru/wp-content/uploads/2023/03/podkraduli-mem.jpg",
+      "title": "2",
+      "description": "товар очень хороший.",
+      "price": 19
+    },
+    {
+      "img": "https://memepedia.ru/wp-content/uploads/2023/03/podkraduli-mem.jpg",
+      "title": "3",
+      "description": "товар очень хороший",
+      "price": 5
+    },
+    {
+      "img": "https://memepedia.ru/wp-content/uploads/2023/03/podkraduli-mem.jpg",
+      "title": "4",
+      "description": "товар очень хороший.",
+      "price": 29
+    },
+    {
+      "img": "https://memepedia.ru/wp-content/uploads/2023/03/podkraduli-mem.jpg",
+      "title": "5",
+      "description": "товар очень хороший",
+      "price": 15
+    },
+    {
+      "img": "https://memepedia.ru/wp-content/uploads/2023/03/podkraduli-mem.jpg",
+      "title": "6",
+      "description": "товар очень хороший",
+      "price": 9
+    },
+    {
+      "img": "https://memepedia.ru/wp-content/uploads/2023/03/podkraduli-mem.jpg",
+      "title": "7",
+      "description": "товар очень хороший.",
+      "price": 24
+    },
+    {
+      "img": "https://memepedia.ru/wp-content/uploads/2023/03/podkraduli-mem.jpg",
+      "title": "8",
+      "description": "товар очень хороший.",
+      "price": 7
+    },
+    {
+      "img": "https://memepedia.ru/wp-content/uploads/2023/03/podkraduli-mem.jpg",
+      "title": "9",
+      "description": "товар очень хороший",
+      "price": 12
+    },
+    {
+      "img": "https://texterra.ru/upload/iblock/3b5/e0wtg19i2kvc1p7fcg8qy3mu5j5oyh84/anons_input.webp",
+      "title": "10",
+      "description": "товар очень хороший",
+      "price": 17
+    },
+    {
+      "img": "https://texterra.ru/upload/iblock/3b5/e0wtg19i2kvc1p7fcg8qy3mu5j5oyh84/anons_input.webp",
+      "title": "11",
+      "description": "товар очень хороший.",
+      "price": 8
+    },
+    {
+      "img": "https://texterra.ru/upload/iblock/3b5/e0wtg19i2kvc1p7fcg8qy3mu5j5oyh84/anons_input.webp",
+      "title": "12",
+      "description": "товар очень хороший.",
+      "price": 21
+    },
+    {
+      "img": "https://texterra.ru/upload/iblock/3b5/e0wtg19i2kvc1p7fcg8qy3mu5j5oyh84/anons_input.webp",
+      "title": "13",
+      "description": "товар очень хороший",
+      "price": 14
+    },
+    {
+      "img": "https://texterra.ru/upload/iblock/3b5/e0wtg19i2kvc1p7fcg8qy3mu5j5oyh84/anons_input.webp",
+      "title": "14",
+      "description": "товар очень хороший",
+      "price": 11
+    },
+    {
+      "img": "https://texterra.ru/upload/iblock/3b5/e0wtg19i2kvc1p7fcg8qy3mu5j5oyh84/anons_input.webp",
+      "title": "16",
+      "description": "товар очень хороший.",
+      "price": 27
+    },
+    {
+        "img": "https://texterra.ru/upload/iblock/3b5/e0wtg19i2kvc1p7fcg8qy3mu5j5oyh84/anons_input.webp",
+        "title": "17",
+        "description": "товар очень хороший.",
+        "price": 33
+      },
+      {
+        "img": "https://texterra.ru/upload/iblock/3b5/e0wtg19i2kvc1p7fcg8qy3mu5j5oyh84/anons_input.webp",
+        "title": "18",
+        "description": "товар очень хороший.",
+        "price": 9
+      },
+      {
+        "img": "https://texterra.ru/upload/iblock/3b5/e0wtg19i2kvc1p7fcg8qy3mu5j5oyh84/anons_input.webp",
+        "title": "19",
+        "description": "товар очень хороший.",
+        "price": 8
+      },
+      {
+        "img": "https://texterra.ru/upload/iblock/3b5/e0wtg19i2kvc1p7fcg8qy3mu5j5oyh84/anons_input.webp",
+        "title": "20",
+        "description": "товар очень хороший.",
+        "price": 7
+      }
+    ]
