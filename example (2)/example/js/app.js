@@ -202,6 +202,6 @@ const convert = (element, target, target2) => {
         })
     })
 }
-convert(som, [eur,usd,yan,ten])
-convert(eur, [som,usd,yan,ten])
-convert(usd, [eur,som,yan,ten])
+convert(som, [eur,usd,som])
+convert(eur, [som,usd,eur])
+convert(usd, [eur,som,usd])
