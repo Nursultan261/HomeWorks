@@ -172,15 +172,11 @@ const postData = (form) => {
 forms.forEach((item) => {
     postData(item)
 })
-const yan = document.querySelector("#yan")
 
 const som = document.querySelector("#som")
 const usd = document.querySelector("#usd")
 const eur = document.querySelector("#eur")
 
-
-
-const ten = document.querySelector("#ten")
 
 const convert = (element, target, target2) => {
     element.addEventListener("input", () => {
