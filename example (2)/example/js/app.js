@@ -96,7 +96,6 @@ closeModalBtn.onclick = () => closeModal()
 
 modal.onclick = (event) => (event.target === modal ? closeModal() : false)
 
-
 const message = {
     loading: "Loading...",
     success: "Thanks, we'll be in touch soon!",
@@ -122,7 +121,7 @@ const postData = (form) => {
 
         const request = new XMLHttpRequest()
         request.open("POST", "server.php")
-        request.setRequestHeader("Content-type", "date/json")
+        request.setRequestHeader("Content-type", "application/json")
 
         const formData = new FormData(form)
         const object = {}
@@ -172,36 +171,3 @@ const postData = (form) => {
 forms.forEach((item) => {
     postData(item)
 })
-
-const som = document.querySelector("#som")
-const usd = document.querySelector("#usd")
-const eur = document.querySelector("#eur")
-
-
-const convert = (element, target, target2) => {
-    element.addEventListener("input", () => {
-        const request = new XMLHttpRequest()
-
-
-        request.open("GET", "data.json")
-        request.setRequestHeader("Content-Type", "application/jason")
-        request.send()
-
-
-
-        request.addEventListener("load", () => {
-            const data = JSON.parse(request.response)
-
-            target.forEach(event => {
-                target2 === 'som' ?
-                    event.value = (element.value / data [event.id]).toFixed(2) : event === som?
-                        event.value = (element.value * data[element.id]).toFixed(2)
-                        :event.value = ((element.value * data[element.id]) / data[event.id]).toFixed(2)
-            })
-            element.value === '' && (target.forEach(event => event.value = ''))
-        })
-    })
-}
-convert(som, [eur,usd,som])
-convert(eur, [som,usd,eur])
-convert(usd, [eur,som,usd])

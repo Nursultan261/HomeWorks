@@ -1,41 +1,31 @@
+const som = document.querySelector('#som')
+const usd = document.querySelector('#usd')
+const eur = document.querySelector('#eur')
 
-const input = document.getElementById('input')
-const createButton = document.getElementById('create_button')
-const todoList = document.getElementById('todo_list')
-
-const createTodo = () => {
-    if (input.value.trim() === '') {
-        input.value = ''
-        return false
-    } else {
-        const div = document.createElement('div')
-        const text = document.createElement('h3')
-        const buttonsDiv = document.createElement('div')
-        const editButton = document.createElement('button')
-        const deleteButton = document.createElement('button')
-
-        div.setAttribute('class', 'block_text')
-        text.setAttribute('class', 'text')
-        buttonsDiv.setAttribute('class','buttons_div')
-        editButton.setAttribute('class', 'edit_button')
-        deleteButton.setAttribute('class','delete_button')
-
-        deleteButton.innerHTML = 'DELETE'
-        editButton.innerHTML = 'EDIT'
-
-        text.innerText = input.value
-
-        buttonsDiv.append(deleteButton, editButton)
-        div.append(text, buttonsDiv)
-        todoList.prepend(div)
-        deleteButton.onclick = () => div.remove()
-        editButton.onclick = () => {
-            const editedText = prompt('EDIT')
-            text.innerText = editedText
-        }
-    }
-    input.value = ''
+const convert =(elem, target, isTrue) => {
+    elem.addEventListener("input", () => {
+        const request = new XMLHttpRequest()
+        request.open("GET","data.json")
+        request.setRequestHeader("Content-Type","application/json")
+        request.send()
+        request.addEventListener("load", () => {
+            const data =JSON.parse(request.response)
+            if (elem === som) {
+                target.value = (elem.value / data.eur).toFixed(2)
+                isTrue.value = (elem.value / data.usd).toFixed(2)
+            }else if (elem === usd) {
+                target.value = (elem.value * data.usd).toFixed(2)
+                isTrue.value = (elem.value * data.usd / data.eur).toFixed(2)
+            }else if (elem === eur) {
+                target.value = (elem.value * data.eur).toFixed(2)
+                isTrue.value = (elem.value * data.eur  / data.usd).toFixed(2)
+            }
+            elem.value === '' ? (target.value = '') : null
+            elem.value === '' ? (isTrue.value = '') : null
+        })
+    })
 }
 
-createButton.onclick = () => createTodo()
-input.addEventListener('keydown', e => (e.keyCode === 13) ? createTodo() : false)
+convert (som, usd, eur, 42)
+convert (usd, som, eur, '')
+convert(eur, som, usd, "" )
